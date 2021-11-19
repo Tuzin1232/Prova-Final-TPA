@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="center">
+
+        <div class="container">
+            
+            <label for="valorMensal">Digite o Valor aplicado Mensalmente</label>
+            
+            <input type="number" min ="1" id="valorMensal" placeholder="R$">
+            
+            <label for="taxaJuros">Digite a Taxa de Juros</label>
+            
+            <input type="number" min ="0" id="taxaJuros" placeholder="%">
+            
+            <label for="numeroParcelas">Digite o número de parcelas mensais</label>
+            
+            <input type="number" min ="1"id="numeroParcelas" placeholder="Meses">
+            
+            <div class="button">
+
+                <button type="button" class="btn" id="calcular">Calcular</button>
+            
+            </div>
+        
+        </div>
+        
+        <div id="result" style="display: none;">
+            <label id="lblResult"></label>
+        </div>
+
+    </div>
+    
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
